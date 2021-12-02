@@ -1,4 +1,4 @@
-f = open('numbers')
+f = open('input')
 
 a = []
 b = []

@@ -1,4 +1,4 @@
-f = open('numbers')
+f = open('input')
 
 last = None
 current = 0
