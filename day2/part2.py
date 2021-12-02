@@ -8,7 +8,7 @@ for x in f:
     direction = split_string[0]
     direction_value = int(split_string[1])
     
-    match split_string[0]:
+    match direction:
         case 'forward':
             h_pos += direction_value
             depth += aim * direction_value
