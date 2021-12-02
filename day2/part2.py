@@ -13,10 +13,8 @@ for x in f:
             h_pos += direction_value
             depth += aim * direction_value
         case 'up':
-            # depth -= direction_value
             aim -= direction_value
         case 'down':
-            # depth += direction_value
             aim += direction_value
             
 print(f'horizontal position: {h_pos}')
