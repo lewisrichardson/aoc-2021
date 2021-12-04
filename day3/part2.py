@@ -1,10 +1,11 @@
 from enum import Enum
+from typing import List
 
 class Rating(Enum):
     OXYGEN_GENERATOR = 0,
     CO2_SCRUBBER = 1
 
-def read_lines():
+def read_lines() -> List[str]:
     with open('input') as f:
         lines = f.read().split('\n')
         del lines[-1] # remove empty line
