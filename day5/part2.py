@@ -12,8 +12,6 @@ class Direction(Enum):
     VERTICAL = 1
     DIAGONAL_DOWN_PERFECT = 2
     DIAGONAL_UP_PERFECT = 3
-    DIAGONAL_DOWN_IMPERFECT = 4
-    DIAGONAL_UP_IMPERFECT = 5
 
 def read_coorindates():
     coords_list = []
@@ -102,8 +100,6 @@ def get_ordered_diagonal_up_coords(coords):
 def get_ordered_diagonal_down_coords(coords):
     return [coords[x2], coords[y2], coords[x1], coords[y1]] if coords[y1] > coords[y2] else coords
 
-def get_first_coord(a, b):
-    return [a, b] if a < b else [b, a]
 
 coordinates, width, height = read_coorindates()
 overlaps = count_overlaps(width, height, coordinates)
